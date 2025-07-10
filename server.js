@@ -16,14 +16,14 @@ app.post('/send-payment-email', async (req, res) => {
     let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'ztsteam000@gmail.com', // replace with your Gmail
-        pass: 'aukb injr sozb laul' // replace with your Gmail App Password
+        user: 'saqiniazibrand@gmail.com', // replace with your Gmail
+        pass: 'awnq qjlq nfig fzhv' // replace with your Gmail App Password
       }
     });
 
     let mailOptions = {
-      from: 'ztsteam000@gmail.com', // sender address
-      to: 'fatimahamid711@gmail.com', // receiver
+      from: 'saqiniazibrand@gmail.com', // sender address
+      to: 'admin@otcsoftware.com', // receiver
       subject: 'Payment Confirmation',
       text: `Payment received via ${paymentMethod}. Wallet address: ${walletAddress}. Please verify the payment and activate the software.`,
       html: `
